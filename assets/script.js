@@ -192,8 +192,8 @@ const questions = [
         question: "What is the purpose of the 'JSON.stringify()' method in JavaScript?",
         answers: [
             {
-                text: "To execute an asynchronous task in JavaScript.",
-                correct: false
+                text: "To convert a JavaScript object into a JSON string.",
+                correct: true
             },
             {
                 text: "To parse a JSON string into a JavaScript object.",
@@ -204,8 +204,8 @@ const questions = [
                 correct: false
             },
             {
-                text: "To convert a JavaScript object into a JSON string.",
-                correct: true
+                text: "To execute an asynchronous task in JavaScript.",
+                correct: false
             }
         ]
     }
@@ -358,3 +358,9 @@ function viewLeaderboard() {
     loadLeaderboard()
     document.getElementById('leaderboard').hidden = false
 }
+
+document.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+    }
+});
