@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Coding Quiz</title>
+</head>
+
+<body>
+<div class="startpage" id="startpage">
+    <h1>Coding Quiz!</h1>
+    <h2>Test your Knowledge</h2>
+    <br>
+    <button id="start_button" class="startbutton" type="button">Start!</button>
+    <button onclick="viewLeaderboard()" class="startbutton" type="button">View Leaderboard</button>
+</div>
+<div class="question" id="q1" hidden>
+    <h2 id="timer">(2s)</h2>
+    <h2 class="quest" id="quest_text">how many kisses can andrew give before he dies?</h2>
+    <button class="questionbutton" id="answer_button_0" type="button" onclick="submitAnswer(0)">Answer 1</button>
+    <button class="questionbutton" id="answer_button_1" type="button" onclick="submitAnswer(1)">Answer
+        dsfsdfsdfsdfsdfsdfsdfdsfsdfsdfsS2</button>
+    <button class="questionbutton" id="answer_button_2" type="button" onclick="submitAnswer(2)">Answer 3</button>
+    <button class="questionbutton" id="answer_button_3" type="button" onclick="submitAnswer(3)">Answer 4</button>
+    <input type="hidden" id="question_num" name="question_num" value="0">
+    <input type="hidden" id="score" name="score" value="0">
+</div>
+<div class="startpage" id="finishpage" hidden>
+    <form>
+        <h2><label for="username">Username: </label></h2>
+        <input type="text" id="username" name="username" placeholder="Username">
+        <h2>Score: <a id="score_text"></a></h2>
+        <button class="startbutton" type="button" onclick="submitScore()">Submit</button>
+    </form>
+
+</div>
+<div class="startpage" id="leaderboard" hidden>
+    <h1>Leaderboard</h1>
+    <h3 id="lb-0">1</h3>
+    <h3 id="lb-1">2</h3>
+    <h3 id="lb-2">3</h3>
+    <button class="questionbutton" type="button" onclick="clearLeaderboard()">Clear Scores</button>
+    <button class="questionbutton" type="button" onclick="returnHome()">Go Home</button>
+</div>
+<script src="./assets/script.js">
+</script>
+</body>
+
+</html>
